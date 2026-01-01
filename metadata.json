@@ -1,0 +1,1102 @@
+{
+    "0001": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0002": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0003": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0004": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0005": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0006": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0007": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0008": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0009": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0010": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0011": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0012": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0013": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0014": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0015": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0016": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0017": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0018": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Basic"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0019": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0020": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0021": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0022": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0023": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0024": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0025": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0026": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0027": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0028": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0029": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Adjunction"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0030": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Reflective"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0031": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Reflective"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0032": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Reflective"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0033": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Reflective"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0034": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0035": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0036": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0037": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0038": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0039": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0040": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0041": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Concrete"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0042": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0043": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0044": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0045": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0046": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0047": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0048": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0049": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0050": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0051": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0052": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0053": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0054": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0055": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0056": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0057": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0058": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0059": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0060": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0061": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0062": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0063": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0064": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0065": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0066": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0067": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0068": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0069": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0070": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0071": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0072": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0073": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Limit"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0074": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Cocompletion"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0075": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Cocompletion"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0076": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Cocompletion"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0077": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Cocompletion"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0078": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Cocompletion"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0079": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0080": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0081": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0082": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0083": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0084": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0085": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0086": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0089": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0087": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0088": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0090": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Abelian"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0091": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0092": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Easy",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0093": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0094": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0095": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0096": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0097": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0098": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0099": {
+        "domain": [
+            "Category"
+        ],
+        "level": "Medium",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    },
+    "0100": {
+        "domain": [
+            "Category"
+        ],
+        "level": "High",
+        "tag": [
+            "Monad"
+        ],
+        "reference": "",
+        "declaration": []
+    }
+}
