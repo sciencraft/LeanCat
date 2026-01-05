@@ -26,6 +26,7 @@ LeanCat/
 ├── lakefile.lean          
 ├── lean-toolchain         # Use Lean version 4.19.0
 ├── metadata.json          # Problem metadata (difficulty, tags, refs)
+├── LeanCat.pdf            # PDF version of the benchmark
 ├── lake-manifest.json    
 ├── .gitignore            
 └── LICENSE               
