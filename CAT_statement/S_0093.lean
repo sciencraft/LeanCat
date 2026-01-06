@@ -2,9 +2,13 @@ import Mathlib
 
 open CategoryTheory Limits
 
+universe uC uD vC vD w w'
 
-variable {C D: Type*} [Category C] [Category D] (G : D ⥤ C)
+variable {C : Type uC} [Category.{vC} C]
+variable {D : Type uD} [Category.{vD} D]
+variable (G : D ⥤ C)
 
-theorem cocomplete_iff_hasCoequalizers_of_monadic [HasColimitsOfSize C] [MonadicRightAdjoint G] :
-    HasColimitsOfSize D ↔ HasCoequalizers D := by
+theorem cocomplete_iff_hasCoequalizers_of_monadic
+  [HasColimitsOfSize.{w, w'} C] [MonadicRightAdjoint G] :
+    HasColimitsOfSize.{w, w'} D ↔ HasCoequalizers D := by
   sorry
