@@ -2,7 +2,7 @@ import Mathlib
 
 open CategoryTheory Limits TopologicalSpace
 
-namespace CAT_statement_S_0019
+namespace CAT_statement_S_0017
 
 universe u uX
 
@@ -48,4 +48,4 @@ theorem Inj_in_TopCat {Y : TopCat.{u}} :
     AHS.IsInjectiveObj (C:= TopCatConcrete) Y ↔∃ (I : Type u), Nonempty (Retract Y (piObj (fun (_ : I) => S))) := by
     sorry
 
-end CAT_statement_S_0019
+end CAT_statement_S_0017
