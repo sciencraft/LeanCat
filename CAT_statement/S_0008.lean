@@ -1,11 +1,22 @@
 import Mathlib
 
-open CategoryTheory
+open CategoryTheory Limits
+
+universe u
+variable {G H : Grp.{u}}
+
+def M : Bool → Type u
+  | true  => G
+  | false => H
+
+instance : (b : Bool) → Group (M (G := G) (H := H) b) := by
+  intro b
+  cases b <;> dsimp [M] <;> infer_instance
+
+abbrev FreeProdGrp : Grp.{u} :=
+  Grp.of (Monoid.CoprodI (ι := Bool) (M := M (G := G) (H := H)))
 
 
-theorem coproduct_is_free_product (G₁ G₂ : Grp) :
-  ∀ (H : Grp) (f₁ : G₁ ⟶ H) (f₂ : G₂ ⟶ H),
-   ∃! φ: (FreeGroup (G₁ ⊕ G₂)) ⟶ H,
-    φ.comp (fun x ↦ FreeGroup.of (Sum.inl x)) = f₁
-    ∧ φ.comp (fun x ↦ FreeGroup.of (Sum.inr x)) = f₂ :=
-sorry
+theorem freeProdGrp_iso_coprod [HasBinaryCoproduct G H] :
+     Nonempty (FreeProdGrp (G := G) (H := H) ≅ coprod G H):= by
+  sorry
