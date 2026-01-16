@@ -9,7 +9,7 @@ namespace CAT_statement_S_0074
 noncomputable section
 
 
-abbrev Pro (C : Type u) [SmallCategory C] := (CategoryTheory.Ind (Cᵒᵖ))ᵒᵖ
+abbrev Pro (C : Type u) [Category.{v} C] : Type (max u (v + 1)) := (Ind (Cᵒᵖ))ᵒᵖ
 
 
 abbrev proYoneda (C : Type u) [SmallCategory C] : C ⥤ Pro C :=

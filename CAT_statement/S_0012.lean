@@ -1,18 +1,10 @@
 import Mathlib
 
-open CategoryTheory
+open CategoryTheory Functor
 
 
 theorem mono_iff_exists_embedding_section
-  {C : Type u} [Category C]
-  {X Y : C} (f : X ⟶ Y) :
-  Mono f ↔
-    ∃ (D : Type v),
-      ∃ (_ : Category D)
-        (I : C ⥤ D)
-        (g : I.obj Y ⟶ I.obj X),
-          (I.map f) ≫ g = 𝟙 (I.obj X)
-          ∧
-          (∀ {A B : C}, Function.Injective (fun h : A ⟶ B ↦ I.map h)) :=
-by
+  {C : Type u} [Category.{v} C] {X Y : C} (f : X ⟶ Y) :
+    Mono f ↔ ∃ (D : Type (max u v)) (_ : Category.{v} D) (I : C ⥤ D) (_ : FullyFaithful I),
+    IsSplitMono (I.map f) := by
   sorry
