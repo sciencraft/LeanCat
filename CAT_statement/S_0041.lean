@@ -12,7 +12,7 @@ structure FreeObject {C : Type u} [Category.{v} C] [HasForget.{w} C] (x : Type w
   (uniq : ∀ (Y : C) (f : x ⟶ (forget C).obj Y), ∃! (g : obj ⟶ Y), emb ≫ (forget C).map g = f)
 
 
-lemma complete_lattice_category (X : Type u) :
+theorem complete_lattice_category (X : Type u) :
     Nonempty (FreeObject (C := CompleteLat) X) ↔ Cardinal.mk X ≤ 2 := by
     sorry
 
