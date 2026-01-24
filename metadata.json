@@ -25,7 +25,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Easy",
+        "level": "Medium",
         "tag": [
             "Basic"
         ],
@@ -36,7 +36,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Easy",
+        "level": "Medium",
         "tag": [
             "Basic"
         ],
@@ -47,7 +47,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "Easy",
         "tag": [
             "Basic"
         ],
@@ -102,7 +102,7 @@
         "domain": [
             "Category"
         ],
-        "level": "High",
+        "level": "Medium",
         "tag": [
             "Basic"
         ],
@@ -212,7 +212,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "Easy",
         "tag": [
             "Adjunction"
         ],
@@ -256,7 +256,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "Easy",
         "tag": [
             "Adjunction"
         ],
@@ -311,7 +311,7 @@
         "domain": [
             "Category"
         ],
-        "level": "High",
+        "level": "Medium",
         "tag": [
             "Adjunction"
         ],
@@ -531,7 +531,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "Easy",
         "tag": [
             "Limit"
         ],
@@ -608,7 +608,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Limit"
         ],
@@ -630,7 +630,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Limit"
         ],
@@ -641,7 +641,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Limit"
         ],
@@ -652,7 +652,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Limit"
         ],
@@ -663,7 +663,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Limit"
         ],
@@ -674,7 +674,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Limit"
         ],
@@ -729,7 +729,7 @@
         "domain": [
             "Category"
         ],
-        "level": "High",
+        "level": "Medium",
         "tag": [
             "Limit"
         ],
@@ -773,7 +773,7 @@
         "domain": [
             "Category"
         ],
-        "level": "High",
+        "level": "Medium",
         "tag": [
             "Limit"
         ],
@@ -795,7 +795,7 @@
         "domain": [
             "Category"
         ],
-        "level": "High",
+        "level": "Medium",
         "tag": [
             "Limit"
         ],
@@ -806,7 +806,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Cocompletion"
         ],
@@ -905,7 +905,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Easy",
+        "level": "Medium",
         "tag": [
             "Abelian"
         ],
@@ -916,7 +916,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Easy",
+        "level": "Medium",
         "tag": [
             "Abelian"
         ],
@@ -960,7 +960,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "High",
         "tag": [
             "Abelian"
         ],
@@ -982,7 +982,7 @@
         "domain": [
             "Category"
         ],
-        "level": "High",
+        "level": "Medium",
         "tag": [
             "Abelian"
         ],
@@ -1004,7 +1004,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Easy",
+        "level": "Medium",
         "tag": [
             "Monad"
         ],
@@ -1026,7 +1026,7 @@
         "domain": [
             "Category"
         ],
-        "level": "Medium",
+        "level": "Easy",
         "tag": [
             "Monad"
         ],
