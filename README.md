@@ -68,9 +68,9 @@ Our benchmark is build with Lean + Mathlib @ 4.19.0.
 
 ### Difficulty Distribution
 
-- **Easy**: 20 problems (≤6/10 difficulty score)
-- **Medium**: 42 problems (6-8.5/10 difficulty score)  
-- **High**: 38 problems (≥8.5/10 difficulty score)
+- **Easy**: 20 problems (≤5.54/10 difficulty score)
+- **Medium**: 42 problems (5.54-7.8/10 difficulty score)  
+- **High**: 38 problems (≥7.8/10 difficulty score)
 
 
 
