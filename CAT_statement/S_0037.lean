@@ -23,18 +23,36 @@ def IsConcreteFunc {A B : ConcreteCat (X := X)} (F : A.C ⥤ B.C) : Prop :=
 
 def SetConcrete : ConcreteCat (X := Type u) :=
 { C := Type u
-  U := 𝟭 (Type u) }   
+  U := 𝟭 (Type u) }
 
 
 def TopConcrete : ConcreteCat (X := Type u) :=
 { C := TopCat.{u}
-  U := (forget TopCat) }  
+  U := (forget TopCat) }
 
-def ConcreteFuncsIso (A B : ConcreteCat (X := Type u)) : Type _ :=
+def ConcreteFuncs (A B : ConcreteCat (X := Type u)) : Type _ :=
   { F : A.C ⥤ B.C // IsConcreteFunc (A := A) (B := B) F }
 
+def ConcreteFuncsSetoid (A B : ConcreteCat (X := Type u)) :
+    Setoid (ConcreteFuncs A B) where
+  r F G := Nonempty (F.1 ≅ G.1)
+  iseqv := by
+    refine ⟨?_, ?_, ?_⟩
+    · intro F
+      exact ⟨Iso.refl F.1⟩
+    · intro F G h
+      rcases h with ⟨e⟩
+      exact ⟨e.symm⟩
+    · intro F G H hFG hGH
+      rcases hFG with ⟨eFG⟩
+      rcases hGH with ⟨eGH⟩
+      exact ⟨eFG.trans eGH⟩
+
+def ConcreteFuncClasses (A B : ConcreteCat (X := Type u)) : Type _ :=
+  Quotient (ConcreteFuncsSetoid A B)
+
 theorem only_two_concrete_functors_from_Set_to_Top_iso :
-    Nat.card (ConcreteFuncsIso SetConcrete TopConcrete) = 2 := by
+    Nat.card (ConcreteFuncClasses SetConcrete TopConcrete) = 2 := by
   sorry
 
 end CAT_statement_S_0037
