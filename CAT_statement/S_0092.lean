@@ -5,6 +5,6 @@ open CategoryTheory Limits
 variable {R : Type u} [CommRing R]
 
 
-theorem ModuleCat.forgetReflectsColimits :
-    Nonempty (ReflectsColimits (forget₂ (ModuleCat R) AddCommGrp)) :=
+theorem ModuleCat.forgetCreatesColimits :
+    Nonempty (CreatesColimits (forget₂ (ModuleCat R) AddCommGrp)) := by
     sorry

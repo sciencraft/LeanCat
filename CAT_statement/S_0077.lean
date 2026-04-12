@@ -147,7 +147,7 @@ end CategoryTheory
 
 open CategoryTheory
 
-theorem SindC_is_Ind_of_RecC {C : Type u} [SmallCategory C]  :
+theorem SindC_is_Ind_of_RecC {C : Type u} [SmallCategory C] [HasPullbacks C] :
     Nonempty (Sind C ≌ Ind (Rec C)) := by
   sorry
 
