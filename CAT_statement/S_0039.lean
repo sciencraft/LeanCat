@@ -107,7 +107,7 @@ def ConcreteFuncsIso (A B : ConcreteCat (X := Type u)) : Type _ :=
   { F : A.C ⥤ B.C // IsConcreteFunc (A := A) (B := B) F }
 
 theorem unique_concrete_functors_from_T0TopCatop_to_Frm_iso :
-    Nat.card (ConcreteFuncsIso T0TopCatConcrete FrmConcrete) = 1 := by
+    Nat.card (ConcreteFuncsIso T0TopCatopConcrete FrmConcrete) = 1 := by
   sorry
 
 end CAT_statement_S_0039

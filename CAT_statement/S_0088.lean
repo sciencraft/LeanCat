@@ -19,6 +19,6 @@ theorem simple_object_end_is_division_ring
 
 
 theorem simple_objects_hom_zero_of_ne
-    {x y : 𝒜} [Simple x] [Simple y] (hxy : x ≠ y) :
+    {x y : 𝒜} [Simple x] [Simple y] (hxy : IsEmpty (x ≅ y)) :
     ∀ f : x ⟶ y, f = 0 := by
   sorry

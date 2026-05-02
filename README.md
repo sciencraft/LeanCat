@@ -1,5 +1,6 @@
-# LeanCat: A Benchmark Suite for Formal Category Theory in Lean 4
+# LeanCat: A Lean Dataset for Evaluating Library-Grounded Category-Theoretic Reasoning
 
+This is an anonymized review artifact.
 
 **LeanCat** is a benchmark suite of **100 statement-level problems** in **Lean 4** (mathlib), designed to stress-test **abstraction-heavy, library-grounded reasoning** in formal mathematics. This repository contains Part I: 1-Category Theory.
 
@@ -11,7 +12,7 @@ LeanCat addresses a critical gap in automated theorem proving benchmarks by focu
 
 ## Repository Structure
 ```text
-Project/
+LeanCat/
 ├── CAT_statement/          # Formal Lean 4 statements of benchmark problems
 ├── problems/               # Natural language problem descriptions (Markdown)
 ├── .github/               
@@ -19,7 +20,6 @@ Project/
 ├── lakefile.lean          
 ├── lean-toolchain         # Use Lean version 4.19.0
 ├── metadata.json          # Problem metadata (difficulty, tags, refs)
-├── LeanCat.pdf            # PDF version of the benchmark
 ├── lake-manifest.json    
 ├── .gitignore            
 └── LICENSE               
@@ -30,12 +30,14 @@ Project/
 1. Install Lean via `elan`: https://leanprover-community.github.io/get_started.html
 2. Build the project:
 ```bash
-
-
 # Build with lake
 lake build
 ```
-Our benchmark is build with Lean + Mathlib @ 4.19.0.
+The benchmark builds with Lean 4.19.0 and mathlib 4.19.0.
+
+## Evaluation Protocol
+
+Each Lean file contains a benchmark statement with one or more `sorry` placeholders. A problem is solved when the placeholders are replaced by a proof and the file is accepted by Lean under the pinned toolchain and dependencies in this artifact. The aggregate project can be checked with `lake build`.
 
 ## Benchmark Content
 
@@ -55,7 +57,7 @@ Our benchmark is build with Lean + Mathlib @ 4.19.0.
 
 7. **Abelian Categories** (Problems 79-90): Homological algebra concepts, kernels, cokernels, exact sequences
 
-8. **Monads** (91-100): Monads, Kleisli and Eilenberg-Moore categories
+8. **Monads** (Problems 91-100): Monads, Kleisli and Eilenberg-Moore categories
 
 ### Difficulty Distribution
 
