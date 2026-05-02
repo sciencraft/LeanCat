@@ -1,1 +1,35 @@
-/.lake
+/.lake/
+/build/
+
+# Lean/Lake local state
+*.olean
+*.ilean
+*.c
+*.o
+*.so
+*.dll
+*.dylib
+*.trace
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python helper caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments and secrets
+.env
+.env.*
+
+# Generated release archives and local artifacts
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.log

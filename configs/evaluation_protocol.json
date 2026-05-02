@@ -1,0 +1,40 @@
+{
+  "dataset": "LeanCat",
+  "lean_toolchain": "leanprover/lean4:v4.19.0",
+  "mathlib_version": "v4.19.0",
+  "build_command": "lake build",
+  "verification": {
+    "timeout_seconds_per_attempt": 300,
+    "invalid_tokens": [
+      "sorry",
+      "admit"
+    ],
+    "invalid_declarations": [
+      "axiom",
+      "unsafe"
+    ],
+    "statement_changes_allowed": false,
+    "new_external_dependencies_allowed": false
+  },
+  "static_passk": {
+    "input": "formal_statement",
+    "retrieval": false,
+    "compiler_feedback": false,
+    "recommended_k_values": [
+      1,
+      4
+    ],
+    "prompt_template": "prompts/static_passk.md"
+  },
+  "leanbridge": {
+    "inputs": [
+      "natural_language",
+      "formal_statement"
+    ],
+    "retrieval": true,
+    "max_refinement_iterations": 4,
+    "top_k_retrieval_results": 3,
+    "generation_prompt_template": "prompts/leanbridge_generate.md",
+    "refinement_prompt_template": "prompts/leanbridge_refine.md"
+  }
+}
