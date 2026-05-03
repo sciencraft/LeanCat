@@ -2,7 +2,7 @@
 
 ## Dataset Summary
 
-LeanCat is a benchmark dataset of 100 statement-level category-theory tasks in
+LeanCat is an evaluation dataset of 100 statement-level category-theory tasks in
 Lean 4 and Mathlib. Each item contains a Lean theorem file, a paired
 natural-language problem statement, and metadata describing topic, difficulty,
 and source information.
@@ -27,7 +27,7 @@ The dataset contains:
   `lakefile.lean`, and `lake-manifest.json`.
 
 Each Lean file is intended to be self-contained at the statement level. The
-provided theorem statements contain `sorry` placeholders because the benchmark
+provided theorem statements contain `sorry` placeholders because the dataset
 asks systems to supply proofs.
 
 ## Collection and Curation
@@ -82,7 +82,7 @@ ability outside the stated Lean 4 / Mathlib / category-theory scope.
   representative of all formal mathematics or all proof assistants.
 - Social impact: the intended positive impact is more precise evaluation of
   reliable formalization systems. The main risk is overclaiming system ability
-  from a compact benchmark or underdocumented evaluation protocol.
+  from a compact evaluation dataset or underdocumented evaluation protocol.
 
 ## Maintenance
 
