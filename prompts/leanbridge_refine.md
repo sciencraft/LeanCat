@@ -10,6 +10,7 @@ Error messages:
 Instructions:
 1. First, analyze the error message carefully in a "## Error Analysis" section.
 2. Decide whether you need to search Mathlib for external knowledge or can fix the proof immediately.
+3. You may preserve or add auxiliary definitions, instances, and lemmas needed by the final proof, but keep the target statement unchanged. The target statement and all auxiliary code must contain no sorry, admit, axiom, or unsafe declarations.
 
 Condition A: If you need external information
 Output the search query wrapped in the tag below:
