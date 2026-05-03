@@ -64,8 +64,72 @@ def extract_lean_code(text: str) -> str:
     return text.strip()
 
 
+def strip_lean_comments_and_strings(code: str) -> str:
+    """Replace Lean comments and string contents with spaces before token checks."""
+    output: list[str] = []
+    index = 0
+    block_depth = 0
+    in_string = False
+
+    while index < len(code):
+        char = code[index]
+        next_char = code[index + 1] if index + 1 < len(code) else ""
+
+        if block_depth > 0:
+            if char == "/" and next_char == "-":
+                block_depth += 1
+                output.extend("  ")
+                index += 2
+            elif char == "-" and next_char == "/":
+                block_depth -= 1
+                output.extend("  ")
+                index += 2
+            else:
+                output.append("\n" if char == "\n" else " ")
+                index += 1
+            continue
+
+        if in_string:
+            if char == "\\" and next_char:
+                output.extend("  ")
+                index += 2
+            elif char == "\"":
+                in_string = False
+                output.append(" ")
+                index += 1
+            else:
+                output.append("\n" if char == "\n" else " ")
+                index += 1
+            continue
+
+        if char == "-" and next_char == "-":
+            output.extend("  ")
+            index += 2
+            while index < len(code) and code[index] != "\n":
+                output.append(" ")
+                index += 1
+            continue
+
+        if char == "/" and next_char == "-":
+            block_depth = 1
+            output.extend("  ")
+            index += 2
+            continue
+
+        if char == "\"":
+            in_string = True
+            output.append(" ")
+            index += 1
+            continue
+
+        output.append(char)
+        index += 1
+
+    return "".join(output)
+
+
 def has_invalid_tokens(code: str) -> bool:
-    return INVALID_TOKEN_RE.search(code) is not None
+    return INVALID_TOKEN_RE.search(strip_lean_comments_and_strings(code)) is not None
 
 
 def verify_lean(code: str, timeout: int) -> tuple[bool, str]:
