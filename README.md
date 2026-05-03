@@ -45,6 +45,28 @@ To validate the artifact structure, run:
 python scripts/validate_dataset.py
 ```
 
+To run the provided evaluation drivers with an OpenAI-compatible chat API:
+```powershell
+$env:OPENAI_API_KEY="your_key"
+$env:OPENAI_BASE_URL="https://api.openai.com/v1"
+python scripts/passk.py --start 1 --end 1 --model gpt-5.2 -k 4
+python scripts/leanbridge.py --start 1 --end 1 --model gpt-5.2 --max-iterations 4
+```
+
+On Linux/macOS:
+```bash
+export OPENAI_API_KEY="your_key"
+export OPENAI_BASE_URL="https://api.openai.com/v1"
+python scripts/passk.py --start 1 --end 1 --model gpt-5.2 -k 4
+python scripts/leanbridge.py --start 1 --end 1 --model gpt-5.2 --max-iterations 4
+```
+
+`leanbridge.py` uses the local LeanExplore backend by default. Install and
+prepare it with `pip install lean-explore[local]` and `lean-explore data fetch`.
+The local LeanExplore service is initialized once per process and reused across
+queries. Use `--search-backend none` for a no-search refinement loop. Outputs
+are written under `results/`, which is ignored by git.
+
 ## Evaluation Protocol
 
 Each Lean file contains a benchmark statement with one or more `sorry` placeholders. A problem is solved when the placeholders are replaced by a proof and the file is accepted by Lean under the pinned toolchain and dependencies in this artifact. The aggregate project can be checked with `lake build`.

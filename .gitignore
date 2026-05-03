@@ -27,6 +27,7 @@ __pycache__/
 .env.*
 
 # Generated release archives and local artifacts
+/results/
 *.zip
 *.tar
 *.tar.gz

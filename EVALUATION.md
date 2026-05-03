@@ -60,6 +60,62 @@ For interactive or retrieval-augmented settings, report:
 The paper experiments use a 300-second verification timeout per attempt unless
 otherwise stated.
 
+## Evaluation Drivers
+
+This artifact includes two lightweight drivers. Both read the paired
+`problems/XXXX.md` and `CAT_statement/S_XXXX.lean` files, call an
+OpenAI-compatible chat-completions endpoint, extract Lean code from the response,
+and check the candidate with `lake env lean`.
+
+Configure the API with environment variables or command-line flags:
+
+Windows PowerShell:
+```powershell
+$env:OPENAI_API_KEY="your_key"
+$env:OPENAI_BASE_URL="https://api.openai.com/v1"
+```
+
+Linux/macOS:
+```bash
+export OPENAI_API_KEY="your_key"
+export OPENAI_BASE_URL="https://api.openai.com/v1"
+```
+
+Static pass@k:
+
+```bash
+python scripts/passk.py --start 1 --end 100 --model gpt-5.2 -k 4
+```
+
+LeanBridge-style generate-verify-refine:
+
+```bash
+python scripts/leanbridge.py --start 1 --end 100 --model gpt-5.2 --max-iterations 4
+```
+
+By default, `leanbridge.py` uses the local LeanExplore backend:
+
+```bash
+pip install lean-explore[local]
+lean-explore data fetch
+python scripts/leanbridge.py --start 1 --end 100 --model gpt-5.2 --search-backend local
+```
+
+The hosted LeanExplore API can be selected with `--search-backend api`, but the
+local backend is recommended when the hosted API is unavailable. To run the
+verify-refine loop without retrieval, use `--search-backend none`. For custom
+retrievers, use `--search-backend command --search-command "python path/to/search.py"`;
+the command receives a query on stdin and writes retrieved Mathlib context to
+stdout.
+
+For local LeanExplore, the service is created once per Python process and reused
+for all queries to avoid repeatedly loading the local indices and models. The
+script prints progress logs with a `[LeanCat]` prefix, including search, LLM, and
+Lean verification stages. The logs do not print API keys.
+
+Outputs are written under `results/` by default. Use `--resume` to skip existing
+result files.
+
 ## Dataset Integrity Check
 
 Run:
@@ -69,4 +125,5 @@ python scripts/validate_dataset.py
 ```
 
 This checks the expected file counts, metadata consistency, import coverage,
-basic statement shape, and anonymization-sensitive text patterns.
+basic statement shape, and absence of root-level PDF files in the anonymized
+artifact.
