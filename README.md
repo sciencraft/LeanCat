@@ -1,3 +1,26 @@
+---
+license: cc-by-4.0
+language:
+  - en
+tags:
+  - lean4
+  - mathlib
+  - formal-theorem-proving
+  - category-theory
+  - benchmark
+  - proof-generation
+pretty_name: LeanCat
+size_categories:
+  - n<1K
+task_categories:
+  - text-generation
+configs:
+  - config_name: default
+    data_files:
+      - split: test
+        path: data/leancat_records.jsonl
+---
+
 # LeanCat: A Lean Dataset for Evaluating Library-Grounded Category-Theoretic Reasoning
 
 This is an anonymized review artifact.
@@ -15,6 +38,8 @@ LeanCat addresses a critical gap in automated theorem proving evaluation dataset
 LeanCat/
 ├── CAT_statement/          # Formal Lean 4 statements of dataset problems
 ├── problems/               # Natural language problem descriptions (Markdown)
+├── data/                   # JSONL records for Hugging Face dataset viewing
+│   └── leancat_records.jsonl # One record per dataset problem
 ├── configs/                # Evaluation protocol configuration
 ├── prompts/                # Prompt templates used by baseline protocols
 ├── scripts/                # Dataset validation utilities
@@ -44,6 +69,20 @@ To validate the artifact structure, run:
 ```bash
 python scripts/validate_dataset.py
 ```
+
+For Hugging Face hosting and programmatic loading, the derived JSONL index is
+provided at `data/leancat_records.jsonl`. It contains one record per problem,
+including the problem id, metadata fields, source file paths, natural-language
+statement, and Lean formal statement. Regenerate it after metadata or statement
+edits with:
+```bash
+python scripts/generate_hf_records.py
+```
+
+The NeurIPS Croissant metadata file with Responsible AI fields is provided as
+`croissant.json`. This file is the validated submission version for
+OpenReview; the Hugging Face Croissant API may still expose the platform's
+automatically generated core-metadata version.
 
 To run the provided evaluation drivers with an OpenAI-compatible chat API:
 ```powershell
@@ -99,4 +138,10 @@ See `EVALUATION.md` for the full proof validity and reporting protocol. See
 - **Easy**: 20 problems (≤5.54/10 difficulty score)
 - **Medium**: 40 problems (5.54-7.8/10 difficulty score)  
 - **High**: 40 problems (≥7.8/10 difficulty score)
+
+## License
+
+Dataset contents, including LeanCat problem statements, natural-language
+descriptions, and metadata, are released under CC BY 4.0. Evaluation scripts and
+software code are released under the repository MIT license.
 

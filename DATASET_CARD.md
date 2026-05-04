@@ -91,6 +91,9 @@ and document any future task additions or compatibility updates.
 
 ## License
 
-This artifact is distributed under the repository license. Users should also
-respect the licenses and terms of upstream dependencies and cited source
-materials.
+Dataset contents, including LeanCat problem statements, natural-language
+descriptions, and metadata, are released under CC BY 4.0. Evaluation scripts and
+software code are released under the repository MIT license.
+
+Users should also respect the licenses and terms of upstream dependencies and
+cited source materials.

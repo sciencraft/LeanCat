@@ -1,0 +1,282 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository.",
+      "contentUrl": "https://huggingface.co/datasets/scicraft/LeanCat/tree/refs%2Fconvert%2Fparquet",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-default",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "default/*/*.parquet"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "dataType": "cr:Split",
+      "key": {
+        "@id": "default_splits/split_name"
+      },
+      "@id": "default_splits",
+      "name": "default_splits",
+      "description": "Splits for the default config.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "default_splits/split_name",
+          "dataType": "sc:Text"
+        }
+      ],
+      "data": [
+        {
+          "default_splits/split_name": "test"
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "default",
+      "description": "scicraft/LeanCat - 'default' subset\n\nAdditional information:\n- 1 skipped column: declaration",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "default/split",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            },
+            "transform": {
+              "regex": "default/(?:partial-)?(test)/.+parquet$"
+            }
+          },
+          "references": {
+            "field": {
+              "@id": "default_splits/split_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/problem_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "problem_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/domain",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "domain"
+            }
+          },
+          "isArray": true,
+          "arrayShape": "-1"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/level",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "level"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/tag",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "tag"
+            }
+          },
+          "isArray": true,
+          "arrayShape": "-1"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/reference",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "reference"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/problem_path",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "problem_path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/lean_path",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "lean_path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/natural_language_statement",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "natural_language_statement"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/formal_statement",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "formal_statement"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "name": "LeanCat",
+  "description": "\n\t\n\t\t\n\t\tLeanCat: A Lean Dataset for Evaluating Library-Grounded Category-Theoretic Reasoning\n\t\n\nThis is an anonymized review artifact.\nLeanCat is a dataset of 100 statement-level problems in Lean 4 (mathlib), designed to stress-test abstraction-heavy, library-grounded reasoning in formal mathematics. This repository contains Part I: 1-Category Theory.\n\n\t\n\t\t\n\t\tOverview\n\t\n\nLeanCat addresses a critical gap in automated theorem proving evaluation datasets by focusing on category theory - the… See the full description on the dataset page: https://huggingface.co/datasets/scicraft/LeanCat.",
+  "alternateName": [
+    "scicraft/LeanCat",
+    "LeanCat"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "scicraft",
+    "url": "https://huggingface.co/scicraft"
+  },
+  "keywords": [
+    "text-generation",
+    "English",
+    "cc-by-4.0",
+    "< 1K",
+    "json",
+    "Text",
+    "Datasets",
+    "pandas",
+    "Polars",
+    "Croissant",
+    "🇺🇸 Region: US",
+    "lean4",
+    "mathlib",
+    "formal-theorem-proving",
+    "category-theory",
+    "benchmark",
+    "proof-generation"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "rai:dataLimitations": "LeanCat is compact and domain-specific. It covers 100 statement-level tasks in Lean 4 category theory, tied to Lean 4.19.0 and Mathlib v4.19.0. It should not be used to make broad claims about all mathematical reasoning, all theorem proving systems, or fine-grained model rankings from small split-level differences.",
+  "rai:dataBiases": "The dataset is intentionally focused on category theory and Mathlib. It over-represents abstraction-heavy library-grounded reasoning and under-represents other mathematical areas, proof assistants, programming languages, and informal reasoning settings. Difficulty labels combine mathematical judgment with machine-facing formalization evidence.",
+  "rai:personalSensitiveInformation": "The dataset contains mathematical statements, Lean code, metadata, prompt templates, and bibliographic source annotations. It does not contain personal, demographic, behavioral, medical, financial, political, or otherwise sensitive information about individuals.",
+  "rai:dataUseCases": "LeanCat is intended for evaluating proof-generation systems under explicit tool, retrieval, and verification assumptions; comparing formal-only and natural-language-plus-formal prompting protocols; studying failure modes in library-grounded theorem proving; and auditing how systems use Mathlib abstractions. It is not intended as evidence of broad mathematical ability outside the stated Lean 4, Mathlib, and category-theory scope.",
+  "rai:dataSocialImpact": "The intended positive impact is more precise and reproducible evaluation of formalization systems for abstract mathematics. Potential negative impacts include overclaiming model capability from a compact benchmark, using results without documenting tool access or retrieval assumptions, or encouraging benchmark-specific optimization without broader validation. The artifact mitigates these risks by documenting the evaluation protocol, limitations, and intended use.",
+  "rai:hasSyntheticData": true,
+  "url": "https://huggingface.co/datasets/scicraft/LeanCat"
+}
