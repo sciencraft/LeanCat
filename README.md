@@ -23,7 +23,7 @@ configs:
 
 # LeanCat: A Lean Dataset for Evaluating Library-Grounded Category-Theoretic Reasoning
 
-This is an anonymized review artifact.
+[![arXiv](https://img.shields.io/badge/arXiv-2512.24796-b31b1b.svg)](https://arxiv.org/abs/2512.24796)
 
 **LeanCat** is a dataset of **100 statement-level problems** in **Lean 4** (mathlib), designed to stress-test **abstraction-heavy, library-grounded reasoning** in formal mathematics. This repository contains Part I: 1-Category Theory.
 
